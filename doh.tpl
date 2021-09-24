@@ -25,10 +25,10 @@ dns:
    - 223.5.5.5
    {% endif %}
   default-nameserver:
-  - https://i.passcloud.xyz/dns-query
-  - https://c.passcloud.xyz/dns-query
-  - https://x.passcloud.xyz/dns-query
-  - https://alipay.dns.nextdns.io/a69373/iMac
+  - 119.29.29.29
+  - 223.5.5.5
+  - 45.90.28.205
+  - 1.0.0.2
 
 {% if local.clash.new_field_name == "true" %}
 proxies: ~
