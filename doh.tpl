@@ -9,7 +9,7 @@ external-controller: :9090
 {% if default(request.clash.dns, "") == "1" %}
 dns:
   enabled: true
-  listen: 1053
+  listen: 53
 {% endif %}
 dns:
   enabled: true
