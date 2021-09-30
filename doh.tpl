@@ -39,10 +39,6 @@ Proxy: ~
 Proxy Group: ~
 Rule: ~
 {% endif %}
-
-{% endif %}
-
-
 proxy-provider:
 	Netease:
 		type: http
@@ -53,3 +49,6 @@ proxy-provider:
 			enable: true
 			url: "http://www.gstatic.com/generate_204"
 			interval: 300
+
+
+{% endif %}
