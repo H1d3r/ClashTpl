@@ -41,3 +41,15 @@ Rule: ~
 {% endif %}
 
 {% endif %}
+
+
+proxy-provider:
+	Netease:
+		type: http
+		path: ./Netease.yaml
+		url: "https://subcon.dlj.tf/sub?target=clash&url=https%3A%2F%2Fivapp.cn%2Fwyy.txt&emoji=true&list=true&sort=true&udp=true&tfo=false&scv=true&append_type=false&fdn=true&new_name=true&include=%E9%9F%B3%E4%B9%90"
+		interval: 3600
+		health-check:
+			enable: true
+			url: "http://www.gstatic.com/generate_204"
+			interval: 300
