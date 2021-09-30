@@ -13,7 +13,7 @@ dns:
 {% endif %}
 dns:
   enabled: true
-  listen: 1053
+  listen: 53
   nameserver:
    {% if default(request.doh, "false") == "true" %}
    - https://i.passcloud.xyz/dns-query
