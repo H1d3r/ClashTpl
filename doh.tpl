@@ -39,6 +39,26 @@ proxy-provider:
       enable: true
       url: "http://www.gstatic.com/generate_204"
       interval: 300
+  gfw:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+
+  greatfire:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
+    path: ./ruleset/greatfire.yaml
+    interval: 86400 
+rules:
+  - RULE-SET,applications,DIRECT
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - RULE-SET,gfw,🚀 节点选择
+  - RULE-SET,Netease,🎸解锁网易云音乐
+  - RULE-SET,greatfire,🚀 节点选择
 {% if local.clash.new_field_name == "true" %}
 proxies: ~
 proxy-groups: ~
