@@ -57,7 +57,6 @@ rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
   - RULE-SET,gfw,🚀 节点选择
-  - RULE-SET,Netease,🎸解锁网易云音乐
   - RULE-SET,greatfire,🚀 节点选择
 {% if local.clash.new_field_name == "true" %}
 proxies: ~
