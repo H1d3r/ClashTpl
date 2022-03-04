@@ -16,9 +16,8 @@ dns:
   listen: 53
   nameserver:
    {% if default(request.doh, "false") == "true" %}
+   - https://a.passcloud.xyz/dns-query
    - https://i.passcloud.xyz/dns-query
-   - https://c.passcloud.xyz/dns-query
-   - https://x.passcloud.xyz/dns-query
    - https://alipay.dns.nextdns.io/a69373/iMac
    {% else %}
    - 119.29.29.29
